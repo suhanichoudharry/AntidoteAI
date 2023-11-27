@@ -42,7 +42,7 @@ $ python pretty.py
 ## Features Code Approach
 
 ## PE-SCANNER 
-The core component of this feature centers around machine learning, where I implemented TPOT, a Python Automated Machine Learning tool designed to optimize machine learning pipelines through genetic programming. TPOT efficiently automates the laborious aspects of machine learning by intelligently exploring a multitude of potential pipelines to identify the most optimal one for the given dataset. In this instance, TPOT identified the best pipeline, and the chosen classifier is XGB. 
+The core component of this feature centers around machine learning, where I implemented TPOT, a Python Automated Machine Learning tool designed to optimize machine learning pipelines through genetic programming. TPOT efficiently automates the laborious aspects of machine learning by intelligently exploring a multitude of potential pipelines to identify the most optimal one for the given dataset. In this instance, TPOT identified the best pipeline, and the **chosen classifier is XGB**. 
 
 The dataset utilized in this analysis comprises 70.1% malware instances and 29.9% benign files. For data partitioning, I segregated the data into 70% training data and 30% testing data. Subsequently, I identified crucial features essential for classification using the extratrees.feature_importances_ function. Following this step, I preserved the XGB classifier and stored the pertinent features to retain essential information for future applications. 
 
@@ -55,7 +55,7 @@ This feature centers on the utilization of a machine learning model to discern b
 
 The dataset under investigation encompasses 11,054 rows, featuring 55.70% phishing URLs and 44.30% legitimate URLs across 32 distinct features. To ensure a robust evaluation, I partitioned the dataset into 20% testing data and 80% training data. 
 
-Upon dataset partitioning, the subsequent step involved deploying TPOT to unearth the optimal machine learning pipeline. The outcome, as determined by TPOT, revealed the GradientBoostingClassifier as the best-performing pipeline, boasting an impressive accuracy rate of 96.92%. 
+Upon dataset partitioning, the subsequent step involved deploying TPOT to unearth the optimal machine learning pipeline. The outcome, as determined by TPOT, revealed the **GradientBoostingClassifier as the best-performing pipeline**, boasting an impressive accuracy rate of 96.92%. 
 
 Having identified the optimal pipeline, I preserved the trained GradientBoostingClassifier as the model for prospective use. Additionally, I delved into comprehending the significance of various features within the dataset using the feature importances_ function. 
 
@@ -94,7 +94,7 @@ This introduction sets the stage for a deeper exploration of the System Health C
 
 ## RESULT 
 
-The presented tool addresses the escalating challenges in cybersecurity by leveraging machine learning in the realms of malware and phishing detection. The PE-Scanner, utilizing TPOT-optimized XGBoost Classifier, demonstrates exceptional performance in identifying and quarantining malicious files, achieving an impressive accuracy of 98.45%. Similarly, the URL-Scanner, employing TPOT and GradientBoostingClassifier, showcases a robust defense against phishing attacks, with a classification accuracy of 97.4%. 
+The presented tool addresses the escalating challenges in cybersecurity by leveraging machine learning in the realms of malware and phishing detection. The **PE-Scanner, utilizing TPOT-optimized XGBoost Classifier, demonstrates exceptional performance in identifying and quarantining malicious files, achieving an impressive accuracy of 98.45%**. Similarly, the **URL-Scanner, employing TPOT and GradientBoostingClassifier, showcases a robust defense against phishing attacks, with a classification accuracy of 97.4%**. 
 
 Beyond cybersecurity threats, the tool extends its capabilities to enhance overall system health and performance. The RAM-Booster efficiently manages system resources, presenting both AI-driven and manual intervention options for dynamic RAM management. The Junk File Remover contributes to digital file organization by identifying and eliminating duplicate and unnecessary files, promoting a clutter-free environment. 
 
