@@ -187,8 +187,8 @@ def extract_infos(fpath):
 if __name__ == '__main__':
     
     #Loading the classifier.pkl and features.pkl
-    clf = joblib.load('PE/PEclassifier.pkl')
-    features = pickle.loads(open(os.path.join('PE/PEfeatures.pkl'),'rb').read())
+    clf = joblib.load('PE/Classifier.pkl')
+    features = pickle.loads(open(os.path.join('PE/features.pkl'),'rb').read())
     
     #extracting features from the PE file mentioned in the argument 
     data = extract_infos(sys.argv[1])

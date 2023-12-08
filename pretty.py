@@ -89,7 +89,7 @@ class AntidoteAIApp:
 
     def run_PE(self):
         file = simpledialog.askstring("PE Scanner", "Enter the path and name of the file:")
-        return "python3 PE/extractPE.py {}".format(file)
+        return "python3 newpe/extractPE.py {}".format(file)
 
     def run_URL(self):
         url = simpledialog.askstring("URL Scanner", "Enter the URL:")
