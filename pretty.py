@@ -19,7 +19,7 @@ class AntidoteAIApp:
         self.style.configure("Red.TButton", foreground="white", background="green")
         self.style.map("Red.TButton", background=[("active", "black")])
 
-        self.style.configure("Green.TFrame", background="green")
+        self.style.configure("Green.TFrame", background="white")
 
         button_frame = ttk.Frame(root, padding="10", style="Green.TFrame")
         button_frame.pack(side=tk.LEFT, fill=tk.Y)
@@ -65,7 +65,7 @@ class AntidoteAIApp:
         output_frame.bind("<Enter>", self.set_x_cursor)
         output_frame.bind("<Leave>", lambda e: root.config(cursor=""))
 
-        self.output_text = scrolledtext.ScrolledText(output_frame, wrap=tk.WORD, width=60, height=15, bg="black", fg="green")
+        self.output_text = scrolledtext.ScrolledText(output_frame, wrap=tk.WORD, width=60, height=15, bg="white", fg="black")
         self.output_text.pack(pady=10, fill=tk.BOTH, expand=True)
 
     def set_hand_cursor(self, event):
